@@ -6,18 +6,14 @@ public class CuentaBancaria {
     private int numeroCuenta;
     private String tipoCuenta;
     private double saldo = 0;
-
     //? Constructores
-
     public CuentaBancaria() {}
-
     public CuentaBancaria(String nombreTitular, int numeroCuenta, String tipoCuenta, double saldo) {
         this.nombreTitular = nombreTitular;
         this.numeroCuenta = numeroCuenta;
         this.tipoCuenta = tipoCuenta;
         this.saldo = saldo;
     }
-
     //? Getters & Setters
     public int getNumeroCuenta() {
         return numeroCuenta;
@@ -43,7 +39,6 @@ public class CuentaBancaria {
     public void setTipoCuenta(String tipoCuenta) {
         this.tipoCuenta = tipoCuenta;
     }
-
     //? Metodos
     public void depositar (double monto){
         if (monto >= 0){
